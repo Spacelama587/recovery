@@ -170,3 +170,147 @@
   background-color: #2d3748;
   margin: 0 8px;
 }
+
+.history {
+  font-family: "MedievalSharp", cursive;
+}
+
+.history-text {
+  font-family: "Lilita One", serif;
+}
+
+.his {
+  font-family: "Romanesco", cursive;
+  font-size: 2rem;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.bg-1 {
+  background-image: url("../ressources/roman.jpg");
+  background-size: cover;
+  font-weight: 400;
+  position: relative;
+}
+
+.bg-1::before {
+  content: ""; /* Add a pseudo-element for overlay */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Adjust the opacity here (0.5 for 50% opacity) */
+}
+
+.bg-2 {
+  background-image: url("../ressources/2932.jpg");
+  background-size: cover;
+  font-weight: 400;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.bg-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bg-3 {
+  background-image: url("../ressources/mideval.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.bg-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-4 {
+  background-image: url("../ressources/eighteen.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.bg-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-5 {
+  background-image: url("../ressources/18thcentuerysvg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.bg-5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-6 {
+  background-image: url("../ressources/1912.i305.017_18th 19th century old town victorian illustration.jpg");
+  background-size: cover;
+  position: relative;
+}
+.bg-7 {
+  background-image: url("../ressources/bright-colorful-pop-landscape.jpg");
+  background-size: cover;
+  position: relative;
+}
+.bg-9 {
+  background-image: url("../images/derbyPH.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.cta {
+  font-family: Archivo Black;
+}
+
+.cover {
+  background-size: cover;
+  position: relative;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.p1,
+.p2 {
+  font-size: 1.2rem;
+}

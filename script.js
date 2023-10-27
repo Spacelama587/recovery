@@ -56,29 +56,64 @@ function navToggle() {
 //   });
 // });
 
-const sections = document.querySelectorAll(".section");
-let currentSection = 0;
+// const sections = document.querySelectorAll(".section");
+// let currentSection = 0;
 
-function showNextSection(button) {
-  sections[currentSection].style.display = "none";
+// function showNextSection(button) {
+//   sections[currentSection].style.display = "none";
 
-  // Hide the "Read More" button for the previous section
-  button.style.display = "none";
+//   // Hide the "Read More" button for the previous section
+//   button.style.display = "none";
 
-  currentSection++;
-  if (currentSection < sections.length) {
-    sections[currentSection].style.display = "block";
+//   currentSection++;
+//   if (currentSection < sections.length) {
+//     sections[currentSection].style.display = "block";
 
-    // Update the "Read More" button text for the new section
-    if (currentSection < sections.length - 1) {
-      const nextSection = sections[currentSection + 1];
-      button.textContent =
-        "Read More about " +
-        nextSection.querySelector(".bg-green-500").textContent;
-      nextSection.querySelector("button").style.display = "block";
-    }
-  }
-}
+//     // Update the "Read More" button text for the new section
+//     if (currentSection < sections.length - 1) {
+//       const nextSection = sections[currentSection + 1];
+//       button.textContent =
+//         "Read More about " +
+//         nextSection.querySelector(".bg-green-500").textContent;
+//       nextSection.querySelector("button").style.display = "block";
+//     }
+//   }
+// }
 
 // Initialize to display the first section
-sections[currentSection].style.display = "block";
+// sections[currentSection].style.display = "block";
+
+// Show the modal
+function showContactModal() {
+  const modal = document.getElementById("contactModal");
+  modal.classList.remove("opacity-0", "pointer-events-none");
+  modal.classList.add("opacity-100", "pointer-events-auto");
+
+  // Add the 'modal-open' class to disable background scrolling
+  document.body.classList.add("modal-open");
+}
+
+// Hide the modal
+function hideContactModal() {
+  const modal = document.getElementById("contactModal");
+  modal.classList.remove("opacity-100", "pointer-events-auto");
+  modal.classList.add("opacity-0", "pointer-events-none");
+
+  // Remove the 'modal-open' class to enable background scrolling
+  document.body.classList.remove("modal-open");
+}
+
+// Attach the event listener to your "Contact Us" cards
+const contactCards = document.querySelectorAll(".contact-card");
+contactCards.forEach(function (contactCard) {
+  contactCard.addEventListener("click", showContactModal);
+});
+
+document
+  .getElementById("contactCloseButton")
+  .addEventListener("click", hideContactModal);
+
+// Show the modal after a delay of 9 seconds
+setTimeout(function () {
+  showContactModal();
+}, 9000);
