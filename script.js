@@ -112,8 +112,3 @@ contactCards.forEach(function (contactCard) {
 document
   .getElementById("contactCloseButton")
   .addEventListener("click", hideContactModal);
-
-// Show the modal after a delay of 9 seconds
-setTimeout(function () {
-  showContactModal();
-}, 1400);
