@@ -251,15 +251,16 @@ body.modal-open {
   position: relative;
 }
 
-.bg-5::before {
+/* .bg-5::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
 .bg-6 {
   background-image: url("../ressources/1912.i305.017_18th 19th century old town victorian illustration.jpg");
   background-size: cover;
