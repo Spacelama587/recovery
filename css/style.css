@@ -596,8 +596,8 @@ video {
   left: 0px;
 }
 
-.right-1 {
-  right: 0.25rem;
+.right-4 {
+  right: 1rem;
 }
 
 .top-0 {
@@ -614,6 +614,11 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.-mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
 .mx-12 {
@@ -938,6 +943,11 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -1516,6 +1526,8 @@ body.modal-open {
   font-size: 1.2rem;
 }
 
+/* Style for the modal */
+
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -1557,8 +1569,9 @@ body.modal-open {
 }
 
 @media (min-width: 640px) {
-  .sm\:right-12 {
-    right: 3rem;
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .sm\:mx-12 {
@@ -1566,9 +1579,12 @@ body.modal-open {
     margin-right: 3rem;
   }
 
-  .sm\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:grid-cols-2 {
