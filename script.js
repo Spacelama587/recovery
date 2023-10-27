@@ -116,4 +116,4 @@ document
 // Show the modal after a delay of 9 seconds
 setTimeout(function () {
   showContactModal();
-}, 1200);
+}, 1400);
