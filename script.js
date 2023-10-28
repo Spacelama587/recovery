@@ -112,3 +112,8 @@ contactCards.forEach(function (contactCard) {
 document
   .getElementById("contactCloseButton")
   .addEventListener("click", hideContactModal);
+
+window.addEventListener("load", function () {
+  // Page has finished loading, hide the spinner
+  document.getElementById("loading-spinner").style.display = "none";
+});
